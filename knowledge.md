@@ -92,7 +92,7 @@
 - _width: fit-content_: có độ rộng bằng với nội dung nó chứa
 - _margin-inline_: tương ứng margin-left và margin-right
 - _padding-inline_: tương ứng padding-left và padding-right
-- _margin-block_: tương ứng margin-left và margin-right
+- _margin-block_: tương ứng margin-top và margin-top
 - _padding-block_: tương ứng padding-top và padding-bottom
 - _caniuse_: là 1 trang web giúp chúng ta kiểm tra những thuộc tính trong css xem nó có được nhiều trình duyệt hỗ trợ hay không ? Từ đó chúng ta có thể chắc chắn sử dụng vào trong dự án
 - _semantic tags_: header, footer, main, section, article, nav, aside
