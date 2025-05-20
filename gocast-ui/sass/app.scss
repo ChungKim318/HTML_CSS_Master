@@ -1,11 +1,18 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
+// @import './abstracts/variables';
+// @import './abstracts/mixins';
+@use './abstracts';
+body {
+  font-family: abstracts.$font-primary;
+}
 
-@import './base/reset';
-@import './base/general';
-@import './base/typography';
+// @import './base/reset';
+@use './base/reset';
+// @import './base/general';
+// @import './base/typography';
+@use './base/typography';
 
-@import './components/header';
-@import './components/sidebar';
+// @import './components/header';
+// @import './components/sidebar';
 
-@import './pages/home';
+@use './layouts/structure';
+// @import './pages/home';
