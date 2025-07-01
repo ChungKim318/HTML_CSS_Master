@@ -2,4 +2,5 @@ mixin menuItem(text, icon = '../../images/icons/icon-home.svg', href = '#')
   li.menu-item 
     a.menu-link(href= href)
       img(src= icon, alt="home").menu-icon
+      //- span.menu-icon !{icon}
       span.menu-text= text

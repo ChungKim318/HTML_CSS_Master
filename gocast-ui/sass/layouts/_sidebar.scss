@@ -39,6 +39,13 @@
     &:hover {
       background: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
       color: white;
+      [fill^='#E5'] {
+        fill: white;
+        opacity: 1;
+      }
+      [fill^='#A5'] {
+        fill: hsl(var(--primary-h), calc(var(--primary-s) + 1%), calc(var(--primary-l) + 16%));
+      }
     }
   }
 }
