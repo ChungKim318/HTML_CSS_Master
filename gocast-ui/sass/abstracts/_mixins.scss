@@ -40,13 +40,19 @@
     font-weight: 700;
   }
 }
-@mixin flexBox($align: center, $justify: center) {
+@mixin flexBox($align: center, $justify: center, $gap: 0, $direction: row) {
   display: flex;
   align-items: $align;
+  flex-direction: $direction;
   @if $justify {
     justify-content: $justify;
   }
   @if $gap {
     gap: $gap;
+  }
+}
+@mixin screenMw($value) {
+  @media screen and (min-width: $value) {
+    @content;
   }
 }
