@@ -3,6 +3,9 @@
   @include abs.bg(white);
   padding: 48px 30px;
   border-right: 1px solid abs.$gray-natural2;
+  @include abs.screenMadWidth(1279.98px) {
+    display: none;
+  }
 }
 .logo {
   display: block;

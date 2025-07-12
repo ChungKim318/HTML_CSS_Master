@@ -51,8 +51,18 @@
     gap: $gap;
   }
 }
-@mixin screenMw($value) {
+@mixin screenMinWidth($value) {
   @media screen and (min-width: $value) {
     @content;
   }
+}
+@mixin screenMaxWidth($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+@mixin textGradient() {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
