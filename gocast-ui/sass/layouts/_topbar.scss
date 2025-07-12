@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &-logo {
+    flex-shrink: 0;
+  }
   &-right {
     @include abs.flexBox(center, null, 24px);
     & > * {
@@ -28,6 +31,16 @@
     @include abs.placeholder(abs.$gray2);
   }
 }
+@media screen and (max-width: 1279.98px) {
+  .topbar {
+    padding: 20px 24px;
+  }
+  .topbar-action,
+  .search,
+  .button-upload {
+    display: none;
+  }
+}
 .profile {
   display: block;
   @include abs.size(48px);
@@ -41,4 +54,5 @@
   --p: 0 15px;
   height: 48px;
   @include abs.flexBox(center, null, 6px);
+  display: none;
 }

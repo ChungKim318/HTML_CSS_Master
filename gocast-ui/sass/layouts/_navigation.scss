@@ -1,0 +1,29 @@
+@use '../abstracts' as abs;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: abs.$bg-color;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  &-item {
+    border-radius: 100rem;
+  }
+  &-upload {
+    width: 44px;
+    height: 44px;
+    border-radius: 100rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none; // Hide on larger screens
+  }
+}
