@@ -1,12 +1,12 @@
 @use '../abstracts' as abs;
 .topbar {
   padding: 24px 56px;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &-logo {
     flex-shrink: 0;
+    color: white;
   }
   &-right {
     @include abs.flexBox(center, null, 24px);
@@ -19,7 +19,6 @@
   padding: 12px 20px;
   @include abs.rounded('rounded-xl');
   @include abs.flexBox(center, null, 12px);
-  @include abs.bg(abs.$gray-natural12);
   flex: 0 1 360px;
   &-input {
     @include abs.bg(transparent);
@@ -31,6 +30,12 @@
     @include abs.placeholder(abs.$gray2);
   }
 }
+@media screen and (min-width: 1280px) {
+  .topbar-logo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1279.98px) {
   .topbar {
     padding: 20px 24px;
